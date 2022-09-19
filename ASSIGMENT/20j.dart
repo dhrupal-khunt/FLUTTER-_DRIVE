@@ -1,0 +1,1 @@
+// 20j. write a program you ave to make a summation o first and last digit.(e.g 1234 ans -5)
