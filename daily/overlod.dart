@@ -1,16 +1,16 @@
-import 'dart:io';
+// import 'dart:io';
 
-class A {
-  void dispaly() {
-    print("hello");
-  }
+// class A {
+//   void dispaly() {
+//     print("hello");
+//   }
 
-  int dispaly(int num) {
-    return 10;
-  }
-}
+//   int dispaly(int num) {
+//     return 10;
+//   }
+// }
 
-void mai() {
-  var obj = A();
-  obj.dispaly();
-}
+// void mai() {
+//   var obj = A();
+//   obj.dispaly();
+// }
