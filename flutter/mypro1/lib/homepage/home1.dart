@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mypro1/homepage/constant.dart';
 
 class logo extends StatefulWidget {
   const logo({super.key});
@@ -10,41 +11,36 @@ class logo extends StatefulWidget {
 class _logoState extends State<logo> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 100,
-      width: 100,
-      child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
+    return Scaffold(
+      appBar: AppBar(backgroundColor: Colors.cyan,title: Text("TRAVELOGUES"),),
+      body: Container(
+        margin: EdgeInsets.all(13),
+        child: Column(
+          
+          
           children: [
-            Image.asset(
-              "assets/images/joker.webp",
-              width: 103,
-              height: 105,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "meal",
-                  style: TextStyle(
-                      color: Colors.amber,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
+            
+            Container(
+              margin: EdgeInsets.only(left: 25),
+              child: Image.asset("assets/images/GANDHINAGAR.JPG",height: 300,width: 300,)),
+            InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (((context) => myapp()))));
+              },
+              child: Container(
+                margin: EdgeInsets.only(left: 30),
+                child: Text(
+                  "GANDHINAGAR",
+                  style: TextStyle(fontSize: 20),
                 ),
-                Text("monkey",style: TextStyle(
-                      color: Colors.blue,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-    ),
-              ],
+              ),
             ),
-            Text("food delivary",style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 13,
-                      fontWeight: FontWeight.bold),
-    ),
-          ]),
+            
+          ],
+        ),
+      ),
     );
   }
 }
+
