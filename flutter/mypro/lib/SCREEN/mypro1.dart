@@ -48,7 +48,7 @@ class _mypro1State extends State<mypro1> {
                   },
                   child: Text(
                     "pizza",
-                    style: TextStyle(color: Colors.black, fontSize: 20),
+                    style: TextStyle(color: Colors.black, fontSize: 15),
                   ),
                   
                 ),
@@ -114,7 +114,7 @@ class _mypro2State extends State<mypro2> {
                         Container(
                           child: Text(
                             title[index],
-                            style: TextStyle(color: Colors.black, fontSize: 20),
+                            style: TextStyle(color: Colors.black, fontSize: 15),
                           ),
                         ),
                         Container(

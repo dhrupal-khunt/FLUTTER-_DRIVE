@@ -17,46 +17,48 @@ class _FirstState extends State<First> {
   String? result;
   int? a;
   int? num;
-  int?reverse;
-  
+  int? reverse;
+
   TextEditingController numbercontroller = TextEditingController();
-  
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(title: Text("TEXTFORM FIELD")),
+    return Scaffold(
+      appBar: AppBar(title: Text("TEXTFORM FIELD")),
       body: Container(
-            width: double.maxFinite,
+        width: double.maxFinite,
         height: double.maxFinite,
-        color: status! ? colorname: Colors.blue,
+        color: status! ? colorname : Colors.blue,
         child: Column(children: [
-                      TextFormField(
-                  
-                  controller: numbercontroller,
-                  decoration: const InputDecoration(
-                      focusedBorder: const OutlineInputBorder(
-                        borderSide: const BorderSide(color: Colors.greenAccent)
-                      ),
-                      label: const Text("Enter Number"),
-                      hintText: "Enter Number",
-                  ),
-                 ),
-                      ElevatedButton(onPressed: () {
-                        setState(() {
-                         int     num=int.parse(numbercontroller.text.toString());
-                          int a ,reverse = 0, remainder;
-                        // int  num = int.parse(numbercontroller.text.toString());
-                           while (num != 0) {
-    remainder = num % 10;
-    reverse = reverse * 10 + remainder;
-    
-  }
-  result=("$num");
-                        });},
-                        style: ElevatedButton.styleFrom(primary: Colors.amberAccent),
-                       child: Text("Submit")),
-                       Text("$result",style: TextStyle(fontSize: 25),)
-                       ]),
-        
+          TextFormField(
+            controller: numbercontroller,
+            decoration: const InputDecoration(
+              focusedBorder: const OutlineInputBorder(
+                  borderSide: const BorderSide(color: Colors.greenAccent)),
+              label: const Text("Enter Number"),
+              hintText: "Enter Number",
+            ),
+          ),
+          ElevatedButton(
+              onPressed: () {
+                setState(() {
+                  int num = int.parse(numbercontroller.text.toString());
+                  int a, reverse = 0, remainder;
+                  // int  num = int.parse(numbercontroller.text.toString());
+                  while (num != 0) {
+                    remainder = num % 10;
+                    reverse = reverse * 10 + remainder;
+                  }
+                  result = ("$num");
+                });
+              },
+              style: ElevatedButton.styleFrom(primary: Colors.amberAccent),
+              child: Text("Submit")),
+          Text(
+            "$result",
+            style: TextStyle(fontSize: 25),
+          )
+        ]),
       ),
     );
   }

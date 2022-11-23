@@ -53,7 +53,7 @@ class _listState extends State<list> {
                         Container(
                           child: Text(
                             title[index],
-                            style: TextStyle(color: Colors.black, fontSize: 20),
+                            style: TextStyle(color: Colors.black, fontSize: 15),
                           ),
                         ),
                         Container(
