@@ -16,5 +16,5 @@ import 'package:mypro1/traveling/tab.dart';
 
 void main() {
   runApp(
-      MaterialApp(debugShowCheckedModeBanner: false, home: TrackerPage()));
+      MaterialApp(debugShowCheckedModeBanner: false, home: login()));
 }

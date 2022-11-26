@@ -25,15 +25,15 @@ class _tabState extends State<tab> {
             bottom: TabBar(
               tabs: [
                 Text(
-                  "history",
+                  "History",
                   style: TextStyle(fontSize: 20),
                 ),
                 Text(
-                  "hotel",
+                  "Hotel",
                   style: TextStyle(fontSize: 20),
                 ),
                 Text(
-                  "place",
+                  "Place",
                   style: TextStyle(fontSize: 20),
                 ),
                 Text(

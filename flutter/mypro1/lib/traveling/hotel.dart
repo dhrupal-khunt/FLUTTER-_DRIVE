@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mypro1/traveling/7wonders.dart';
 import 'package:mypro1/traveling/berlin_hotel.dart';
-import 'package:mypro1/traveling/gerrn_city.dart';
+import 'package:mypro1/traveling/green_city.dart';
 import 'package:mypro1/traveling/ghunghat_hotel.dart';
 import 'package:mypro1/traveling/kalash_hotel.dart';
 import 'package:mypro1/traveling/prayosh_hotel.dart';
@@ -19,7 +19,7 @@ class hotel extends StatefulWidget {
 class _hotelState extends State<hotel> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(      
+    return Scaffold(
       body: Column(
         children: [
           Row(
@@ -43,7 +43,8 @@ class _hotelState extends State<hotel> {
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/hotel1.jpg',
-                            height: 105,
+                            height: MediaQuery.of(context).size.height/8
+
                           ),
                         ),
                       ),
@@ -77,8 +78,8 @@ class _hotelState extends State<hotel> {
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/hotel_kalash.webp',
-                            height: 110,
-                          ),
+                            height: MediaQuery.of(context).size.height/8
+                         ),
                         ),
                       ),
                       Text(
@@ -104,17 +105,17 @@ class _hotelState extends State<hotel> {
                   );
                 },
                 child: Container(
-                margin: EdgeInsets.only(top: 60,left: 15),
+                  margin: EdgeInsets.only(top: 60, left: 15),
                   child: Column(
-                   mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      
                       ClipRRect(
                         borderRadius: BorderRadius.circular(16), // Image border
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/01.jpg',
-                            height: 105,
+                            height: MediaQuery.of(context).size.height/8
+
                             //width: 200,
                           ),
                         ),
@@ -141,7 +142,7 @@ class _hotelState extends State<hotel> {
                   );
                 },
                 child: Container(
-                  margin: EdgeInsets.only(top: 60,left: 15),
+                  margin: EdgeInsets.only(top: 60, left: 30),
                   child: Column(
                     children: [
                       ClipRRect(
@@ -149,7 +150,8 @@ class _hotelState extends State<hotel> {
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/hotel-green-city.jpg',
-                            height: 105,
+                             height: MediaQuery.of(context).size.height/8
+
                           ),
                         ),
                       ),
@@ -176,7 +178,7 @@ class _hotelState extends State<hotel> {
                   );
                 },
                 child: Container(
-                  margin: EdgeInsets.only(top: 60,left: 15),
+                  margin: EdgeInsets.only(top: 60, left: 15),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -185,12 +187,13 @@ class _hotelState extends State<hotel> {
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/03.jpg',
-                           height: 100,
-                          //  width: 200,
+                            height: MediaQuery.of(context).size.height/9
+                            //  width: 200,
                           ),
                         ),
                       ),
-                      Text(
+                  
+                                            Text(
                         "prayosh hotel",
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.bold),
@@ -212,7 +215,7 @@ class _hotelState extends State<hotel> {
                   );
                 },
                 child: Container(
-                  margin: EdgeInsets.only(top: 60),
+                  margin: EdgeInsets.only(top: 60,left: 30),
                   child: Column(
                     children: [
                       ClipRRect(
@@ -220,7 +223,7 @@ class _hotelState extends State<hotel> {
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/prime_hotel.webp',
-                            height: 105,
+                            height: MediaQuery.of(context).size.height/8.5,
                           ),
                         ),
                       ),
@@ -230,23 +233,12 @@ class _hotelState extends State<hotel> {
                             fontSize: 18, fontWeight: FontWeight.bold),
                       ),
                     ],
-                    
-                    
                   ),
-                  
-                  
-
-                  
                 ),
-                
-                
               ),
-              
-      
             ],
-            
           ),
-          
+
           // Row(
           //   children: [
           //     GestureDetector(
@@ -321,10 +313,12 @@ class _hotelState extends State<hotel> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>tab()));},
+        onPressed: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => tab()));
+        },
         child: Icon(Icons.add),
       ),
-      
     );
   }
 }

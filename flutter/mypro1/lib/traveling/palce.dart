@@ -45,10 +45,10 @@ class _placeState extends State<place> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20,right: 20,bottom: 20,top: 10),
+                        padding: const EdgeInsets.only(left: 20,right: 20,bottom: 20,top: 20),
                         child: Image.asset(
-                          "assets/images/akshardham.jpg",
-                          height: 150,
+                          "assets/images/akshardham.jpg",fit: BoxFit.cover,
+                          height: 200,
                           width: 350,
                         ),
                       ),
@@ -80,11 +80,11 @@ class _placeState extends State<place> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20,bottom: 10),
+                        padding: const EdgeInsets.only(left: 20, right: 20,bottom: 20,top: 20),
                         child: Image.asset(
-                          "assets/images/sarita udhyan.jpg",
-                          height: 250,
-                          width: 430,
+                          "assets/images/sarita udhyan.jpg",fit: BoxFit.cover,
+                          height: 200,
+                          width: 350,
                         ),
                       ),
                     ],
@@ -110,15 +110,15 @@ class _placeState extends State<place> {
                           padding: const EdgeInsets.only(top: 10),
                           child: Text(
                           
-                            "Adalaj Stepwell",
+                            "ADAJAL TEMPLE",
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20),
-                        child: Image.asset("assets/images/andaj.jpg",
-                            height: 240, width: 300),
+                        padding: const EdgeInsets.only(left: 20, right: 20,bottom: 20,top: 20),
+                        child: Image.asset("assets/images/andaj.jpg",fit: BoxFit.cover,
+                            height: 200, width: 350),
                       ),
                     ],
                   ),
@@ -152,7 +152,7 @@ class _placeState extends State<place> {
                         padding: const EdgeInsets.only(
                             left: 20, right: 20,bottom: 20,top: 20),
                         child: Image.asset(
-                          "assets/images/swapna.jpg",
+                          "assets/images/swapna.jpg",fit: BoxFit.cover,
                           height: 200,
                           width: 350,
                         ),
