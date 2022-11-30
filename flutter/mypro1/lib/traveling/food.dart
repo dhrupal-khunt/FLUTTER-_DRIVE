@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class food extends StatefulWidget {
   const food({super.key});
 
@@ -9,6 +10,8 @@ class food extends StatefulWidget {
 class _foodState extends State<food> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Column(children: [],),
+    );
   }
 }

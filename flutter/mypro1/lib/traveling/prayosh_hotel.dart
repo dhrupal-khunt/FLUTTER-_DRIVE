@@ -2,6 +2,8 @@ import 'package:file/memory.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/container.dart';
+import 'package:sizer/sizer.dart';
+
 
 class prayosh_hotel extends StatefulWidget {
   const prayosh_hotel({super.key});
@@ -17,7 +19,7 @@ class _prayosh_hotelState extends State<prayosh_hotel> {
       body: Column(
         children: [
           Container(
-              margin: EdgeInsets.only(left: 20, right: 20, bottom: 30, top: 60),
+              margin: EdgeInsets.only(left: 20.w, right: 20.w, bottom: 30.h, top: 60.h),
               child: Image.asset("assets/images/prayosh.webp")),
           Container(
               margin: EdgeInsets.only(right: 230),

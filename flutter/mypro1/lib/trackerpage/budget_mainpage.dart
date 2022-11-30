@@ -13,7 +13,7 @@ class _budgetMainPageState extends State<budgetMainPage> {
   List imgList = [
     "assets/images/budget.jpg",
     "assets/images/budget1.png",
-    "assets/images/ddddd.webp"
+    "assets/images/ddddd.webp",
   ];
 
   int CurrentTab = 0;
@@ -22,32 +22,33 @@ class _budgetMainPageState extends State<budgetMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: BottomNavigationBar(
-          elevation: 1,
-          fixedColor: Colors.deepPurpleAccent,
-          backgroundColor: const Color.fromARGB(255, 235, 221, 243),
-          onTap: (value) {
-            setState(() {
-              CurrentTab = value;
-            });
-          },
-          currentIndex: CurrentTab,
-          items: const [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              label: "Form",
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.notifications),
-              label: "Notification",
-            ),
-          ]),
+      // bottomNavigationBar: BottomNavigationBar(
+      //     elevation: 1,
+      //     fixedColor: Colors.deepPurpleAccent,
+      //     backgroundColor: const Color.fromARGB(255, 235, 221, 243),
+      //     onTap: (value) {
+      //       setState(() {
+      //         CurrentTab = value;
+      //       });
+      //     },
+      //     currentIndex: CurrentTab,
+      //     items: const [
+      //       BottomNavigationBarItem(
+      //         icon: Icon(Icons.home),
+      //         label: "Home",
+      //       ),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(Icons.favorite),
+      //         label: "Form",
+      //       ),
+      //       BottomNavigationBarItem(
+      //         icon: Icon(Icons.notifications),
+      //         label: "Notification",
+      //       ),
+      //     ]),
       body: SafeArea(
         child: Container(
+          
           padding: const EdgeInsets.all(30),
           decoration:
               const BoxDecoration(color: Color.fromARGB(255, 129, 136, 231)),
@@ -81,7 +82,7 @@ class _budgetMainPageState extends State<budgetMainPage> {
                 ),
               ),
               const SizedBox(
-                height: 15,
+                height: 20,
               ),
               SizedBox(
                 height: MediaQuery.of(context).size.width / 1.5,
@@ -109,7 +110,7 @@ class _budgetMainPageState extends State<budgetMainPage> {
                               leading: Image.asset(
                                 imgList[index],
                                 width: 40,
-                                height: 70,
+                                height: 80,
                                 fit: BoxFit.cover,
                               ),
                               title: Text(

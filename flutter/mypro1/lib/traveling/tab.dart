@@ -46,10 +46,10 @@ class _tabState extends State<tab> {
           body: TabBarView(
             children: [history(), hotel(), place(),food()],
           ),
-          floatingActionButton: FloatingActionButton(
-        onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>tab()));},
-        child: Icon(Icons.add),
-      ),
+      //     floatingActionButton: FloatingActionButton(
+      //   onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>tab()));},
+      //   child: Icon(Icons.add),
+      // ),
         ),
       ),
       

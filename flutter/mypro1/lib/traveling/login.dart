@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:mypro1/traveling/tab.dart';
+import 'package:sizer/sizer.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -50,7 +51,7 @@ class _loginState extends State<login> {
                 //                 fit: BoxFit.cover)),
                 //       )),  
                
-                Container(margin: EdgeInsets.only(top: 16,bottom: 30),width: 300,
+                Container(margin: EdgeInsets.only(top: 16.h,bottom: 30.h),width: 300,
                   child: Image.asset("assets/images/logo2.jpg.png"),),
               
                    Container(child: Text("welcome ,$name",style: TextStyle(fontSize: 20),),),

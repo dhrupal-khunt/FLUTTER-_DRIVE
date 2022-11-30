@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
-import 'package:mypro1/task/budget_mainpage.dart';
+import 'package:mypro1/trackerpage/budget_mainpage.dart';
 
 class TrackerPage extends StatefulWidget {
   const TrackerPage({super.key});
@@ -14,7 +14,6 @@ class _TrackerPageState extends State<TrackerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        
         decoration: BoxDecoration(color: Color.fromARGB(255, 214, 231, 129)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mypro1/traveling/7wonders.dart';
+import 'package:mypro1/traveling/7wonder.dart';
+
 import 'package:mypro1/traveling/berlin_hotel.dart';
 import 'package:mypro1/traveling/green_city.dart';
 import 'package:mypro1/traveling/ghunghat_hotel.dart';
