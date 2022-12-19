@@ -1,5 +1,6 @@
-import 'package:account/mybuget_model.dart';
-import 'package:account/repository.dart';
+
+import 'package:account/database_SQL/repo.dart';
+import 'package:account/tracker/mybuget_model.dart';
 
 class Myservices {
   late Repository _repository;

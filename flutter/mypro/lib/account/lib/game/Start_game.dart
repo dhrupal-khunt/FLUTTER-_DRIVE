@@ -1,8 +1,7 @@
+import 'package:account/game/01.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:game_start/01.dart';
-
 
 class game_Quiz extends StatefulWidget {
   const game_Quiz({super.key});
@@ -18,8 +17,8 @@ class _DesignState extends State<game_Quiz> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image:
-                NetworkImage("https://c.files.bbci.co.uk/E909/production/_112375695_crucible976.jpg"),
+            image: NetworkImage(
+                "https://c.files.bbci.co.uk/E909/production/_112375695_crucible976.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -56,7 +55,7 @@ class _DesignState extends State<game_Quiz> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: ((context) =>First()),
+                      builder: ((context) => First()),
                     ),
                   );
                 },

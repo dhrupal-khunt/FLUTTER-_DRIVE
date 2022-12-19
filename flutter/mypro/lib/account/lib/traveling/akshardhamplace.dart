@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class akshardham extends StatefulWidget {
@@ -21,7 +20,6 @@ class _akshardhamState extends State<akshardham> {
             child: Row(
               children: [
                 Container(
-                  
                   child: Image.asset(
                     "assets/images/logosksh.png",
                     fit: BoxFit.fill,
@@ -46,20 +44,23 @@ class _akshardhamState extends State<akshardham> {
               items: [
                 Image.asset(
                   "assets/images/swam1.jpg",
-                  height: 150,width: double.maxFinite,
+                  height: 150,
+                  width: double.maxFinite,
                 ),
-               
                 Image.asset(
                   'assets/images/seam4.jpg',
-                  height: 150,width: double.maxFinite,
+                  height: 150,
+                  width: double.maxFinite,
                 ),
                 Image.asset(
                   'assets/images/swam3.jpg',
-                  height: 150,width: double.maxFinite,
+                  height: 150,
+                  width: double.maxFinite,
                 ),
                 Image.asset(
                   'assets/images/seam4.jpg',
-                  height: 150,width: double.maxFinite,
+                  height: 150,
+                  width: double.maxFinite,
                 ),
               ],
               options: CarouselOptions(
@@ -106,7 +107,7 @@ class _akshardhamState extends State<akshardham> {
           Container(
             margin: EdgeInsets.only(top: 30),
             child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Container(
                   margin: EdgeInsets.all(6),
@@ -123,7 +124,6 @@ class _akshardhamState extends State<akshardham> {
                   width: 90,
                   child: Image.asset("assets/images/logo_1.png"),
                 ),
-                
               ],
             ),
           ),
@@ -154,7 +154,6 @@ class _akshardhamState extends State<akshardham> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
-                
               ],
             ),
           )

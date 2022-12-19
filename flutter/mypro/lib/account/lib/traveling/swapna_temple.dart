@@ -13,7 +13,7 @@
 //       body: Column(
 //         children: [
 //           Container(
-            
+
 //           )
 //         ]
 //       ),
@@ -21,8 +21,9 @@
 //   }
 // }
 
+import 'package:account/traveling/login.dart';
 import 'package:flutter/material.dart';
-import 'package:mypro1/traveling/login.dart';
+
 class swapna_temple extends StatefulWidget {
   const swapna_temple({super.key});
 
@@ -34,7 +35,6 @@ class _swapna_templeState extends State<swapna_temple> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       body: Column(
         children: [
           // Container(
@@ -45,32 +45,39 @@ class _swapna_templeState extends State<swapna_temple> {
           //   ),
           // ),
           Container(
-                margin: EdgeInsets.only(top: 70,bottom: 10),
-                child: Text(
-                  " GANDHINAGAR",
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 144, 195, 236),
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-                Container(decoration: BoxDecoration(color: Colors.blueGrey,borderRadius: BorderRadius.all(Radius.circular(25))),
-                padding: EdgeInsets.only(left: 15,right: 15),
-                  margin: EdgeInsets.only(top: 20,bottom: 20),
-                  child: Image.asset("assets/images/swapna_srushti..webp",height: 300,width: 350,),),
-        // Container(
-        //         margin: EdgeInsets.only(left: 20, right: 20,),
-        //         child: Container(
-        //           width: 250,
-        //           height: 200,
-        //           decoration: BoxDecoration(
-        //               borderRadius: BorderRadius.circular(200),
-        //               image: DecorationImage(
-        //                   image: AssetImage(
-        //                     "assets/images/GANDHINAGAR.jpg",
-        //                   ),
-        //                   fit: BoxFit.cover)),
-        //         )), 
-
+              margin: EdgeInsets.only(top: 70, bottom: 10),
+              child: Text(
+                " GANDHINAGAR",
+                style: TextStyle(
+                    color: Color.fromARGB(255, 144, 195, 236),
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold),
+              )),
+          Container(
+            decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                borderRadius: BorderRadius.all(Radius.circular(25))),
+            padding: EdgeInsets.only(left: 15, right: 15),
+            margin: EdgeInsets.only(top: 20, bottom: 20),
+            child: Image.asset(
+              "assets/images/swapna_srushti..webp",
+              height: 300,
+              width: 350,
+            ),
+          ),
+          // Container(
+          //         margin: EdgeInsets.only(left: 20, right: 20,),
+          //         child: Container(
+          //           width: 250,
+          //           height: 200,
+          //           decoration: BoxDecoration(
+          //               borderRadius: BorderRadius.circular(200),
+          //               image: DecorationImage(
+          //                   image: AssetImage(
+          //                     "assets/images/GANDHINAGAR.jpg",
+          //                   ),
+          //                   fit: BoxFit.cover)),
+          //         )),
 
           Container(
             margin: EdgeInsets.only(top: 10),
@@ -278,5 +285,3 @@ class _swapna_templeState extends State<swapna_temple> {
     );
   }
 }
-
-          

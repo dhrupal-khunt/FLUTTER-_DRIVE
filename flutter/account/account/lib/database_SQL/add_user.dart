@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:mypro1/database_SQL/user.dart';
-import 'package:mypro1/database_SQL/service.dart';
+import 'package:account/database_SQL/service.dart';
+import 'package:account/database_SQL/user.dart';
 import 'package:flutter/material.dart';
 
 class AddUser extends StatefulWidget {

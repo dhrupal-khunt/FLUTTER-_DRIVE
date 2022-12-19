@@ -1,8 +1,7 @@
 import 'dart:async';
 
+import 'package:account/game/02.dart';
 import 'package:flutter/material.dart';
-import 'package:game_start/02.dart';
-import 'package:game_start/Start_game.dart';
 
 class First extends StatefulWidget {
   const First({super.key});
@@ -31,7 +30,8 @@ class _GameState extends State<First> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Color.fromARGB(255, 70, 58, 58),
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 70, 58, 58),
       // appBar: AppBar(title: Text("GAME")),
       body: Center(
         child: Column(children: [
@@ -44,14 +44,19 @@ class _GameState extends State<First> {
               visible: isLogoVisible,
               child: Image.network(
                 "https://english.cdn.zeenews.com/sites/default/files/2021/12/29/1000713-dilip-joshi-jethalal.jpg",
-              
-              
                 fit: BoxFit.fill,
               ),
             ),
           ),
           Container(
-            child: Text("Who is character ?",style: TextStyle(fontSize: 35,fontStyle: FontStyle.italic,fontWeight: FontWeight.w400,color: Colors.tealAccent),),
+            child: Text(
+              "Who is character ?",
+              style: TextStyle(
+                  fontSize: 35,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.tealAccent),
+            ),
           ),
           SizedBox(
             height: 70,
@@ -72,7 +77,9 @@ class _GameState extends State<First> {
                   },
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
                   child: Text("BABITA"),
@@ -86,7 +93,9 @@ class _GameState extends State<First> {
                   },
                 ),
               ),
-                  SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Column(
                 children: [
                   Container(
@@ -104,7 +113,9 @@ class _GameState extends State<First> {
                   ),
                 ],
               ),
-                  SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
                   child: Text("TOPU"),
@@ -137,8 +148,8 @@ class _GameState extends State<First> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: ((context) =>seconds())));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: ((context) => seconds())));
             },
             child: Text("Next"),
             style: ButtonStyle(

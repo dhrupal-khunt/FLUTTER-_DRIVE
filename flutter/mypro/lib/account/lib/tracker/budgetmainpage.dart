@@ -1,8 +1,6 @@
-import 'package:account/myService.dart';
-
-import 'package:account/mybuget_model.dart';
-import 'package:account/view_histry.dart';
-
+import 'package:account/tracker/myService.dart';
+import 'package:account/tracker/mybuget_model.dart';
+import 'package:account/tracker/view_histry.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
 

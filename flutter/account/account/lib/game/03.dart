@@ -1,8 +1,7 @@
 import 'dart:async';
 
+import 'package:account/game/01.dart';
 import 'package:flutter/material.dart';
-import 'package:game_start/01.dart';
-import 'package:game_start/Start_game.dart';
 
 class three extends StatefulWidget {
   const three({super.key});
@@ -31,8 +30,9 @@ class _GameState extends State<three> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Color.fromARGB(255, 70, 58, 58),
-    drawerEnableOpenDragGesture: false,
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 70, 58, 58),
+      drawerEnableOpenDragGesture: false,
       // appBar: AppBar(title: Text("GAME")),
       body: Center(
         child: Column(children: [
@@ -44,7 +44,8 @@ class _GameState extends State<three> {
             child: Visibility(
               visible: isLogoVisible,
               child: Image.network(
-                "http://4.bp.blogspot.com/_85dCU3S-dtE/S3I0TnkF9CI/AAAAAAAAAsI/wyYZpO5okUk/s320/logo266.gif",fit: BoxFit.fill,
+                "http://4.bp.blogspot.com/_85dCU3S-dtE/S3I0TnkF9CI/AAAAAAAAAsI/wyYZpO5okUk/s320/logo266.gif",
+                fit: BoxFit.fill,
               ),
             ),
           ),
@@ -67,7 +68,9 @@ class _GameState extends State<three> {
                   },
                 ),
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
                   child: Text("BALAGI"),
@@ -81,7 +84,9 @@ class _GameState extends State<three> {
                   },
                 ),
               ),
-                SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Column(
                 children: [
                   Container(
@@ -99,7 +104,9 @@ class _GameState extends State<three> {
                   ),
                 ],
               ),
-                SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
                   child: Text(" MEGGI"),
@@ -132,8 +139,8 @@ class _GameState extends State<three> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => First())));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: ((context) => First())));
             },
             child: Text("Next"),
             style: ButtonStyle(

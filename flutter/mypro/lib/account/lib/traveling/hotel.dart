@@ -1,14 +1,11 @@
+import 'package:account/traveling/7wonder.dart';
+import 'package:account/traveling/green_city.dart';
+import 'package:account/traveling/kalash_hotel.dart';
+import 'package:account/traveling/prayosh_hotel.dart';
+import 'package:account/traveling/prime_hotel.dart';
+import 'package:account/traveling/tab.dart';
+import 'package:account/traveling/tulsi_hotel.dart';
 import 'package:flutter/material.dart';
-import 'package:mypro1/traveling/7wonder.dart';
-
-import 'package:mypro1/traveling/berlin_hotel.dart';
-import 'package:mypro1/traveling/green_city.dart';
-
-import 'package:mypro1/traveling/kalash_hotel.dart';
-import 'package:mypro1/traveling/prayosh_hotel.dart';
-import 'package:mypro1/traveling/prime_hotel.dart';
-import 'package:mypro1/traveling/tab.dart';
-import 'package:mypro1/traveling/tulsi_hotel.dart';
 
 class hotel extends StatefulWidget {
   const hotel({super.key});
@@ -42,11 +39,8 @@ class _hotelState extends State<hotel> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(18), // Image border
                         child: SizedBox.fromSize(
-                          child: Image.asset(
-                            'assets/images/hotel1.jpg',
-                            height: MediaQuery.of(context).size.height/8
-
-                          ),
+                          child: Image.asset('assets/images/hotel1.jpg',
+                              height: MediaQuery.of(context).size.height / 8),
                         ),
                       ),
                       Text(
@@ -77,10 +71,8 @@ class _hotelState extends State<hotel> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(18), // Image border
                         child: SizedBox.fromSize(
-                          child: Image.asset(
-                            'assets/images/hotel_kalash.webp',
-                            height: MediaQuery.of(context).size.height/8
-                         ),
+                          child: Image.asset('assets/images/hotel_kalash.webp',
+                              height: MediaQuery.of(context).size.height / 8),
                         ),
                       ),
                       Text(
@@ -113,12 +105,11 @@ class _hotelState extends State<hotel> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(16), // Image border
                         child: SizedBox.fromSize(
-                          child: Image.asset(
-                            'assets/images/01.jpg',
-                            height: MediaQuery.of(context).size.height/8
+                          child: Image.asset('assets/images/01.jpg',
+                              height: MediaQuery.of(context).size.height / 8
 
-                            //width: 200,
-                          ),
+                              //width: 200,
+                              ),
                         ),
                       ),
                       Text(
@@ -150,10 +141,8 @@ class _hotelState extends State<hotel> {
                         borderRadius: BorderRadius.circular(18), // Image border
                         child: SizedBox.fromSize(
                           child: Image.asset(
-                            'assets/images/hotel-green-city.jpg',
-                             height: MediaQuery.of(context).size.height/8
-
-                          ),
+                              'assets/images/hotel-green-city.jpg',
+                              height: MediaQuery.of(context).size.height / 8),
                         ),
                       ),
                       Text(
@@ -186,15 +175,13 @@ class _hotelState extends State<hotel> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(18), // Image border
                         child: SizedBox.fromSize(
-                          child: Image.asset(
-                            'assets/images/03.jpg',
-                            height: MediaQuery.of(context).size.height/9
-                            //  width: 200,
-                          ),
+                          child: Image.asset('assets/images/03.jpg',
+                              height: MediaQuery.of(context).size.height / 9
+                              //  width: 200,
+                              ),
                         ),
                       ),
-                  
-                                            Text(
+                      Text(
                         "prayosh hotel",
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.bold),
@@ -216,7 +203,7 @@ class _hotelState extends State<hotel> {
                   );
                 },
                 child: Container(
-                  margin: EdgeInsets.only(top: 60,left: 30),
+                  margin: EdgeInsets.only(top: 60, left: 30),
                   child: Column(
                     children: [
                       ClipRRect(
@@ -224,7 +211,7 @@ class _hotelState extends State<hotel> {
                         child: SizedBox.fromSize(
                           child: Image.asset(
                             'assets/images/prime_hotel.webp',
-                            height: MediaQuery.of(context).size.height/8.5,
+                            height: MediaQuery.of(context).size.height / 8.5,
                           ),
                         ),
                       ),

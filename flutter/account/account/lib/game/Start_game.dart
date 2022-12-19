@@ -1,7 +1,8 @@
+import 'package:account/game/01.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:game_start/01.dart';
+
 
 
 class game_Quiz extends StatefulWidget {

@@ -1,8 +1,8 @@
+import 'package:account/traveling/adalaj_stepwell.dart';
+import 'package:account/traveling/akshardhamplace.dart';
+import 'package:account/traveling/sarita_temple.dart';
+import 'package:account/traveling/swapna_temple.dart';
 import 'package:flutter/material.dart';
-import 'package:mypro1/traveling/adalaj_stepwell.dart';
-import 'package:mypro1/traveling/akshardhamplace.dart';
-import 'package:mypro1/traveling/sarita_temple.dart';
-import 'package:mypro1/traveling/swapna_temple.dart';
 
 class place extends StatefulWidget {
   const place({super.key});
@@ -45,9 +45,11 @@ class _placeState extends State<place> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20,right: 20,bottom: 20,top: 20),
+                        padding: const EdgeInsets.only(
+                            left: 20, right: 20, bottom: 20, top: 20),
                         child: Image.asset(
-                          "assets/images/akshardham.jpg",fit: BoxFit.cover,
+                          "assets/images/akshardham.jpg",
+                          fit: BoxFit.cover,
                           height: 200,
                           width: 350,
                         ),
@@ -80,9 +82,11 @@ class _placeState extends State<place> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20,bottom: 20,top: 20),
+                        padding: const EdgeInsets.only(
+                            left: 20, right: 20, bottom: 20, top: 20),
                         child: Image.asset(
-                          "assets/images/sarita udhyan.jpg",fit: BoxFit.cover,
+                          "assets/images/sarita udhyan.jpg",
+                          fit: BoxFit.cover,
                           height: 200,
                           width: 350,
                         ),
@@ -109,16 +113,16 @@ class _placeState extends State<place> {
                         child: Padding(
                           padding: const EdgeInsets.only(top: 10),
                           child: Text(
-                          
                             "ADAJAL TEMPLE",
                             style: TextStyle(fontSize: 20, color: Colors.white),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20,bottom: 20,top: 20),
-                        child: Image.asset("assets/images/andaj.jpg",fit: BoxFit.cover,
-                            height: 200, width: 350),
+                        padding: const EdgeInsets.only(
+                            left: 20, right: 20, bottom: 20, top: 20),
+                        child: Image.asset("assets/images/andaj.jpg",
+                            fit: BoxFit.cover, height: 200, width: 350),
                       ),
                     ],
                   ),
@@ -139,7 +143,6 @@ class _placeState extends State<place> {
                             ),
                           );
                         },
-                        
                         child: Padding(
                           padding: const EdgeInsets.only(top: 10),
                           child: Text(
@@ -150,9 +153,10 @@ class _placeState extends State<place> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(
-                            left: 20, right: 20,bottom: 20,top: 20),
+                            left: 20, right: 20, bottom: 20, top: 20),
                         child: Image.asset(
-                          "assets/images/swapna.jpg",fit: BoxFit.cover,
+                          "assets/images/swapna.jpg",
+                          fit: BoxFit.cover,
                           height: 200,
                           width: 350,
                         ),

@@ -1,8 +1,10 @@
+import 'package:account/game/Start_game.dart';
 import 'package:flutter/material.dart';
-import 'package:game_start/Start_game.dart';
-main(){
+
+main() {
   runApp(Mygame());
 }
+
 class Mygame extends StatefulWidget {
   const Mygame({super.key});
 
@@ -13,8 +15,9 @@ class Mygame extends StatefulWidget {
 class _GameState extends State<Mygame> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,
-      home:game_Quiz() ,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: game_Quiz(),
     );
   }
 }

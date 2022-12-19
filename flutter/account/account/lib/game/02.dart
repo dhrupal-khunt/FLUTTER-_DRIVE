@@ -1,9 +1,7 @@
 import 'dart:async';
 
+import 'package:account/game/03.dart';
 import 'package:flutter/material.dart';
-import 'package:game_start/01.dart';
-import 'package:game_start/03.dart';
-import 'package:game_start/Start_game.dart';
 
 class seconds extends StatefulWidget {
   const seconds({super.key});
@@ -32,8 +30,9 @@ class _GameState extends State<seconds> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Color.fromARGB(255, 70, 58, 58),
-    drawerEnableOpenDragGesture: false,
+    return Scaffold(
+      backgroundColor: Color.fromARGB(255, 70, 58, 58),
+      drawerEnableOpenDragGesture: false,
       // appBar: AppBar(title: Text("GAME")),
       body: Center(
         child: Column(children: [
@@ -70,8 +69,8 @@ class _GameState extends State<seconds> {
                 ),
               ),
               SizedBox(
-            height: 20,
-          ),
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
                   child: Text(" PIZZA"),
@@ -86,8 +85,8 @@ class _GameState extends State<seconds> {
                 ),
               ),
               SizedBox(
-              height: 20,
-            ),
+                height: 20,
+              ),
               Column(
                 children: [
                   Container(
@@ -106,8 +105,8 @@ class _GameState extends State<seconds> {
                 ],
               ),
               SizedBox(
-            height: 20,
-          ),
+                height: 20,
+              ),
               Container(
                 child: ElevatedButton(
                   child: Text("VADA PAW"),
@@ -140,8 +139,8 @@ class _GameState extends State<seconds> {
           ),
           ElevatedButton(
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: ((context) => three())));
+              Navigator.push(
+                  context, MaterialPageRoute(builder: ((context) => three())));
             },
             child: Text("Next"),
             style: ButtonStyle(

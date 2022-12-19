@@ -1,5 +1,5 @@
-import'package:mypro1/database_SQL/user.dart';
-import 'package:mypro1/database_SQL/add_user.dart';
+import 'package:account/database_SQL/add_user.dart';
+import 'package:account/database_SQL/user.dart';
 import 'package:flutter/material.dart';
 
 class Mymaindb extends StatefulWidget {
@@ -39,7 +39,6 @@ class _MymaindbState extends State<Mymaindb> {
                     children: [
                       ElevatedButton(
                         onPressed: () {
-                          
                           print("edits complete");
                         },
                         child: Icon(Icons.edit),

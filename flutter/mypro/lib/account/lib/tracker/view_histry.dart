@@ -1,5 +1,5 @@
-import 'package:account/myService.dart';
-import 'package:account/mybuget_model.dart';
+import 'package:account/tracker/myService.dart';
+import 'package:account/tracker/mybuget_model.dart';
 import 'package:flutter/material.dart';
 
 class viewhisry extends StatefulWidget {

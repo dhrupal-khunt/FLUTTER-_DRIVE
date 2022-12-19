@@ -1,10 +1,8 @@
-import 'package:mypro1/traveling/food.dart';
-import 'package:mypro1/traveling/history.dart';
-
+import 'package:account/traveling/food.dart';
+import 'package:account/traveling/history.dart';
+import 'package:account/traveling/hotel.dart';
+import 'package:account/traveling/palce.dart';
 import 'package:flutter/material.dart';
-
-import 'package:mypro1/traveling/hotel.dart';
-import 'package:mypro1/traveling/palce.dart';
 
 class tab extends StatefulWidget {
   @override
@@ -44,15 +42,14 @@ class _tabState extends State<tab> {
             ),
           ),
           body: TabBarView(
-            children: [history(), hotel(), place(),food()],
+            children: [history(), hotel(), place(), food()],
           ),
-      //     floatingActionButton: FloatingActionButton(
-      //   onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>tab()));},
-      //   child: Icon(Icons.add),
-      // ),
+          //     floatingActionButton: FloatingActionButton(
+          //   onPressed: () {Navigator.push(context, MaterialPageRoute(builder: (context)=>tab()));},
+          //   child: Icon(Icons.add),
+          // ),
         ),
       ),
-      
     );
   }
 }
